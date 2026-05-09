@@ -1,5 +1,5 @@
-* {
-    margin: 0;
+* { 
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -8,24 +8,24 @@
 /* Header */
 
 header {
-    position: fixed;       /* fixa no topo */
-    top: 0;                /* cola no topo */
-    left: 0;               /* cola na esquerda */
-    width: 100%;           /* ocupa toda a largura */
-    display: flex;
-    justify-content: space-between;
+    position: fixed;       
+    top: 0;                
+    left: 0;               
+    width: 100%; /* largura do cabeçalho */           
+    display: flex; /* aqui esta utilizando flexbox para organizar logo e menu */
+    justify-content: space-between; /* espaço entre a logo e a nav*/
     align-items: center;
     padding: 10px 30px;
     height: 60px;
     background-color: #ffffff;
-    z-index: 1000;         /* garante que fique acima dos outros elementos */
+    z-index: 1000;     /* o z-index garante que o header (cabeçalho) fique acima de outros elementos */
 
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* o gap é utilizado para definir o espaço entre elementos dentro de um container que possua o flex.*/
 }
 
 .logo img {
@@ -35,9 +35,9 @@ header {
 
 nav a {
     margin-left: 20px;
-    text-decoration: none;
+    text-decoration: none; /* remove o sublinhado */
     color: #333;
-    font-weight: 500;
+    font-weight: 500; /* peso da fonte ou negrito.*/ 
 }
 
 /* Cor de fundo */
@@ -52,7 +52,7 @@ main {
 /* Container central */
 
 .container {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6); /* fundo branco com transparência*/
     border: none;
     border-radius: 20px;
     padding: 30px;
@@ -213,4 +213,11 @@ a:hover {
     margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+/*Direitos autorais*/
+footer {
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
